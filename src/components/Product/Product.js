@@ -5,6 +5,7 @@ const Product = (props) => {
     <div>
       
       <h4>{props.product.name}</h4>
+      <h4>{props.product.name}</h4>
       
     </div>
   );
