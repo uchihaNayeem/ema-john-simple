@@ -28,14 +28,23 @@ const Review = () => {
     setCart(cartProducts);
   }, [])
   return (
-    <div>
-      <h1>cart Items: {cart.length}</h1>
+    <div className="twin-container">
+      {/* <h1>cart Items: {cart.length}</h1> */}
+
+      <div>
       {
         cart.map(pd => <ReviewItem
           key={pd.key}
           removeProduct = {removeProduct}
           product={pd}></ReviewItem>)
       }
+
+      </div>
+      <div className="">
+
+      </div>
+
+      
     </div>
   );
 };
